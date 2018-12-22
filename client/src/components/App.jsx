@@ -1,6 +1,9 @@
 import React from 'react';
+import Menu from './Menu.jsx'
 
 import axios from 'axios';
+
+
 
 class App extends React.Component {
   constructor(props) {
@@ -15,15 +18,15 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.state.menu_data)
+    // console.log(this.state.menu_data)
   }
 
 
   getItems(rest_id) {
     axios
       .get(`/api/${rest_id}`)
-      .then(({ data }) => console.log(data))
-      //.then(({ data }) => this.setState({menu_data: data}))
+      //.then(({ data }) => console.log(data))
+      .then(({ data }) => this.setState({menu_data: data}))
       .catch(err => console.log(err));
   }
 
@@ -33,13 +36,13 @@ class App extends React.Component {
       <div>
           Hello from App
 
-          {Object.values(this.state.menu_data[0])}
+          {/* {Object.values(this.state.menu_data[0])} */}
         <form action="">
           <input type="text" />
           <input type="text" />
           <button type="submit">add </button>
         </form>
-
+        <Menu data = {this.state.menu_data}/> 
       </div>
     );
   }
