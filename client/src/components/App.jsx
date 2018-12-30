@@ -1,10 +1,6 @@
 import React from 'react';
 import Menu from './Menu.jsx'
-
 import axios from 'axios';
-
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -22,9 +18,9 @@ class App extends React.Component {
   }
 
 
-  getItems(rest_id) {
+  getMenus(rest_id) {
     axios
-      .get(`/api/${rest_id}`)
+      .get(`/api/menus/${rest_id}`)
       //.then(({ data }) => console.log(data))
       .then(({ data }) => this.setState({menu_data: data}))
       .catch(err => console.log(err));
@@ -34,8 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-          Hello from App
-
+          Hello From App
           {/* {Object.values(this.state.menu_data[0])} */}
         <form action="">
           <input type="text" />

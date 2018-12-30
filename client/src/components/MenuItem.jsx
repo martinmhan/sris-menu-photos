@@ -1,12 +1,11 @@
 import React from 'react';
-import '../../dist/styles.css';
+//import '../../dist/styles.css';
 
 const MenuItem = (props) => {
-    // console.log('List Item Props', props)
     return (
-        <div>
+        <div className='menuitem'>
             <br></br>
-            <b className="DottedBox"> {props.item.rest_name + " - " + props.item.menu_type_name} </b>
+            <b> {props.item.rest_name + " - " + props.item.menu_type_name} </b>
             <br></br>
             {props.item.menu_item_name + " - " + props.item.menu_item_price}
         </div>

@@ -1,4 +1,17 @@
-.DottedBox {
-    margin: 40px;
-    border: 5px dotted pink;
+.menuitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 115px;
+    font-size: 13px;
+    font-family: BrandonText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
   }
+
+  .button-menu-link {
+    margin-right: 16px;
+    background-color: #fff;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #2d333f;
+}
