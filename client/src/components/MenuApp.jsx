@@ -29,7 +29,6 @@ class MenuApp extends React.Component {
   }
 
   filterDatabyMenuType() {
-    console.log('filter menu data');
     axios
     .get(`/api/menus/${this.state.rest_id}`)     
     .then(({ data }) => data.filter(obj => obj.menu_type_num === this.state.menu_state))
