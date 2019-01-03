@@ -4,11 +4,14 @@ import React from 'react';
 const MenuItem = (props) => {
     return (
         <div className='menuitem'>
+            {props.item.menu_item_name}
             <br></br>
-            <b> {props.item.rest_name + " - " + props.item.menu_type_name} </b>
-            <br></br>
-            {props.item.menu_item_name + " - " + props.item.menu_item_price}
+            Made with Cheese and Eggs
+            <div className='menuprice'>
+                {props.item.menu_item_price}
+            </div>
         </div>
+        
     )
 }
 

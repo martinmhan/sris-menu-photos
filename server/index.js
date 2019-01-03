@@ -9,7 +9,6 @@ const PORT = 3007;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-// UNCOMMENT FOR REACT
 app.use(express.static(__dirname + '/../client/dist'));
 
 app.get('/api/menus/:rest_id', (req, res) => {

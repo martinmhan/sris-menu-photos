@@ -14,7 +14,6 @@ fs.readdir(folderpath, (err, items) => {
       const new_path = path.join(__dirname, folderpath, `restID${rest_counter}_photo${photo_counter}.jpg`);
       fs.rename(old_path, new_path, (err) => {
         if (err) throw err;
-        console.log('File Not Renamed.');
       });
 
       photo_counter += 1;

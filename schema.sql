@@ -129,11 +129,11 @@ INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_secti
 
 INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 0, "Breakfast", 2, "Desserts", null, "Waffles", null, "$99.42");
 
-INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 0, "Appetizer", null, "Bread", null, "$99.42");
+INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 0, "Appetizer", null, "Pita and shwarma", null, "$99.42");
 
-INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 0, "Appetizer", null, "Butter", null, "$99.42");
+INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 0, "Appetizer", null, "shishkabob", null, "$99.42");
 
-INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 0, "Appetizer", null, "Bread", null, "$99.42");
+INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 0, "Appetizer", null, "salad", null, "$99.42");
 
 INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 1, "Lunch", 1, "Mains", null, "Eggs and Bacon", null, "$99.42");
 
@@ -145,11 +145,11 @@ INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_secti
 
 INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 0, "Appetizer", null, "Bread", null, "$99.42");
 
-INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 0, "Appetizer", null, "Butter", null, "$99.42");
+INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 0, "Appetizer", null, "Bacon", null, "$99.42");
 
-INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 0, "Appetizer", null, "Bread", null, "$99.42");
+INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 0, "Appetizer", null, "Steak", null, "$99.42");
 
-INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 1, "Mains", null, "Eggs and Bacon", null, "$99.42");
+INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 1, "Mains", null, "Chicken parmesean", null, "$99.42");
 
 INSERT into menus (rest_id, rest_name, menu_type_num, menu_type_name, menu_section_num, menu_section_name, menu_section_description, menu_item_name, menu_item_description, menu_item_price) VALUES (2,"Hummus Factory", 2, "Dinner", 1, "Mains", null, "Hash Browns", null, "$99.42");
 
