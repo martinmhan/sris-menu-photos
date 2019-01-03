@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from './Menu.jsx'
 import axios from 'axios';
 import MenuSection from './MenuSection.jsx'
+import styles from '../../dist/styles.css'
 class MenuApp extends React.Component {
   constructor(props) {
     super(props);
@@ -80,20 +81,17 @@ class MenuApp extends React.Component {
     
     return (
       <div>
-        <div className='sectionHeader'>
+        <div className={styles.sectionHeader}>
+        
+        {/* <div className="sectionHeader"> */}
                 <b>Menu</b>
         </div>
-        <div className = 'menu-section-title'> 
-        <button className="button-menu-link" onClick={e => this.breakfastHandler(e)}>Breakfast</button>
-        <button className="button-menu-link" onClick={e => this.lunchHandler(e)}>Lunch</button>
-        <button className="button-menu-link" onClick={e => this.dinnerHandler(e)}>Dinner</button>
+        <div className = {styles.menusectiontitle}> 
+        <button className={styles.buttonmenulink} onClick={e => this.breakfastHandler(e)}>Breakfast</button>
+        <button className={styles.buttonmenulink} onClick={e => this.lunchHandler(e)}>Lunch</button>
+        <button className={styles.buttonmenulink} onClick={e => this.dinnerHandler(e)}>Dinner</button>
         </div>
 
-        {/* <Menu 
-        data = {this.state.filtered_menu_data}
-        menu_types = {this.state.menu_types}
-        menu_state = {this.state.menu_state}
-        />  */}
         
         <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 0)} />
         <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 1)} />

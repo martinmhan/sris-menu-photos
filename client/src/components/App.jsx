@@ -10,7 +10,7 @@ class App extends React.Component {
       super(props);
       this.state = {
         close: true,
-        rest_id: 50,
+        rest_id: 2,
         currentPhoto: 0
       };
       this.handleEscape = this.handleEscape.bind(this);
@@ -32,11 +32,8 @@ class App extends React.Component {
             currentPhoto: image_num,
             close: false,
         })
-        // this.changeView(image_num)
-        // this.renderView()
     }
     
-
     renderView() {
         if (this.state.close === false) {
             return <View  
