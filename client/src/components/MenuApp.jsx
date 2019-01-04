@@ -74,22 +74,22 @@ class MenuApp extends React.Component {
     
     return (
       <div>
-        <div className={styles.sectionHeader}>
-        
-                <b>Menu</b>
+        <div className={styles.appcontainer}>
+          <div className={styles.sectionHeader}>
+          
+                  <b>Menu</b>
+          </div>
+          <div className = {styles.menusectiontitle}> 
+          <button className={styles.buttonmenulink} onClick={e => this.breakfastHandler(e)}>Breakfast</button>
+          <button className={styles.buttonmenulink} onClick={e => this.lunchHandler(e)}>Lunch</button>
+          <button className={styles.buttonmenulink} onClick={e => this.dinnerHandler(e)}>Dinner</button>
+          </div>
+
+          
+          <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 0)} />
+          <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 1)} />
+          <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 2)} />
         </div>
-        <div className = {styles.menusectiontitle}> 
-        <button className={styles.buttonmenulink} onClick={e => this.breakfastHandler(e)}>Breakfast</button>
-        <button className={styles.buttonmenulink} onClick={e => this.lunchHandler(e)}>Lunch</button>
-        <button className={styles.buttonmenulink} onClick={e => this.dinnerHandler(e)}>Dinner</button>
-        </div>
-
-        
-        <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 0)} />
-        <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 1)} />
-        <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 2)} />
-
-
       </div>
     );
   }

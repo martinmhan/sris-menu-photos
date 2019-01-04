@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuApp from "./MenuApp.jsx";
 import Photo from "./components/Photo.jsx"
-import View from "./components/View.jsx"
+import View from "./components/View.jsx";
+import styles from '../../dist/styles.css'
+
 
 
 class App extends React.Component {
@@ -42,7 +44,7 @@ class App extends React.Component {
             handleEscape ={this.handleEscape}/>
         } else {
             return (
-                <div>    
+                <div className={styles.appcontainer}>    
                     <Photo 
                         handlePictureClick = {this.handlePictureClick}/>
                     <MenuApp />
