@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest test/test.js",
     "start": "nodemon server/index.js",
-    "webpack": "webpack -d --watch"
+    "webpack": "webpack -d --watch",
+    "seed": "mysql -u root < schema.sql"
   },
   "repository": {
     "type": "git",
