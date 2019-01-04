@@ -2,10 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require("axios")
 const db = require('../database');
+const cors = require('cors');
+
 
 const app = express();
 const PORT = 9003;
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
