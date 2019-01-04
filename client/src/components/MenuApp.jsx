@@ -24,14 +24,14 @@ class MenuApp extends React.Component {
 
   findUniqueMenuTypes() {
     axios
-      .get(`/api/menus/${this.state.rest_id}`)     
+      .get(`http://127.0.0.1:9003/api/menus/${this.state.rest_id}`)     
       .then(({ data }) => this.retrieveUniqueMenuTypes(data))
       .then((data) => this.setState({menu_types: data}));
   }
 
   filterDatabyMenuType() {
     axios
-    .get(`/api/menus/${this.state.rest_id}`)     
+    .get(`http://127.0.0.1:9003/api/menus/${this.state.rest_id}`)     
     .then(({ data }) => data.filter(obj => obj.menu_type_num === this.state.menu_state))
     .then((data)=> this.setState({filtered_menu_data: data}))
   }
@@ -39,7 +39,7 @@ class MenuApp extends React.Component {
 
   getMenus(rest_id) {
     axios
-      .get(`/api/menus/${rest_id}`)     
+      .get(`http://127.0.0.1:9003/api/menus/${rest_id}`)     
       .then(({ data }) => this.setState({menu_data: data}));
   }; 
 
@@ -70,20 +70,12 @@ class MenuApp extends React.Component {
   }
 
 
-  // const uniqueSections = [...new Set(props.data.map(obj => obj.menu_section_num))];
-  // console.log("unique", uniqueSections)
-  // filtered_data_array = []
-  // for (let i = 0; i<uniqueSections.length; i++) {
-  //     let filtered_data = props.data.filter(obj => obj.menu_section_num === uniqueSections[i])
-      
-  // }
   render() {
     
     return (
       <div>
         <div className={styles.sectionHeader}>
         
-        {/* <div className="sectionHeader"> */}
                 <b>Menu</b>
         </div>
         <div className = {styles.menusectiontitle}> 
