@@ -1,6 +1,7 @@
 .appcontainer {
   /* border: 2px solid black; */
   width: 650px;
+  /* width: auto; */
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
@@ -9,11 +10,32 @@
   font-weight: 400;
   line-height: 20px;
   padding: 10px;
-}
+} 
+
+.menucontainer {
+  /* border: 2px solid black; */
+  width: 650px;
+  /* width: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-family: BrandonText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px;
+  /* position: relative; */
+  /* z-index: -1; */
+/* 
+  background-image: linear-gradient(transparent , gray ); */
+  /* background-size: 100% 70%;
+  background-repeat: no-repeat;
+  background-position: center bottom; */
+} 
 .menuitem {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 16px;
     -webkit-column-break-inside: avoid;
@@ -24,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     font-family: BrandonText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
 }
 .menuprice {
   float: right;
@@ -68,34 +90,6 @@
   justify-content: space-between;
 }
  
-/* .layout{
-  width: 60vw; 
-  height: 80vh;
-  padding: 2px;
-  display: grid;
-  grid-gap: 1px 1px; 
-  grid-template-rows: repeat(6, minmax(max-content, 1fr));
-  grid-template-columns: repeat(12, minmax(max-content, 1fr));
-  grid-template-areas: 
-    "a a a c c c c c d d e e"
-    "a a a c c c c c d d e e"
-    "a a a c c c c c f f g g"
-    "b b b c c c c c f f g g"
-    "b b b c c c c c h h i i"
-    "b b b c c c c c h h i i";
-  height: auto; 
-} 
-
-.img-1{grid-area: a;}
-.img-2{grid-area: b;}
-.img-3{grid-area: c;}
-.img-4{grid-area: d;}
-.img-5{grid-area: e;}
-.img-6{grid-area: f;}
-.img-7{grid-area: g;}
-.img-8{grid-area: h;}
-.img-9{grid-area: i;}  */
-
 .layout {
   display: flex;
   /* flex-wrap: wrap; */
@@ -104,7 +98,14 @@
   max-height: 100vh;
   /* align-content: center; */
   margin: auto;
-  /* border: solid black 1px; */
+  list-style-type: disc;
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; */
+  height: 300px;
+  /* border: 1px solid black; */
 }
 
 .col1 {
@@ -112,7 +113,7 @@
   /* flex: 1; */
   flex-direction: column;
   justify-content: flex-start;
-  /* width: 25%; */
+  width: 25%;
   height: 100%;
   /* border: solid black 1px; */
 }
@@ -120,7 +121,7 @@
 .col2 {
   /* flex: 2; */
   justify-content: flex-start;
-  /* width: 35%; */
+  width: 35%;
   /* border: solid black 1px; */
 }
 
@@ -129,8 +130,9 @@
   /* flex: 1; */
   flex-direction: column;
   justify-content: flex-start;
-  /* width: 20%; */
+  width: 20%;
   /* border: solid black 1px; */
+  /* margin: 2px */
 }
 
 .col4 {
@@ -138,19 +140,32 @@
   /* flex: 1; */
   flex-direction: column;
   justify-content: flex-start;
-  /* width: 20%; */
+  width: 20%;
   /* border: solid black 1px; */
 }
 
+.row {
+  /* flex: 1; */
+  border: 1px solid white;
+}
+
+
+
 .row1 {
-  /* flex: 1; */
+  margin-bottom: 2%
 }
 
-.row2 {
-  /* flex: 1; */
+.rowstyling {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  /* margin: 2px */
+  
 }
 
-
+* {
+  box-sizing: border-box;
+}
 .view {
   background-color: black;
   position: absolute;
@@ -214,3 +229,44 @@
   top: 0
 }
 
+.viewmore {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  /* offset */
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(transparent, white, white );
+  /* background-color:rgba(0, 255, 255, 1); */
+  border: white solid 1px;
+  margin-top: -45%;
+  opacity: 1;
+  /* z-index: 2505554165; */
+  position: relative
+}
+.viewmore1 {
+  display: none;
+}
+.viewtext {
+  border: 1px solid gainsboro ;
+  border-radius: 2px;
+  /* background-color: white; */
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  height: 15%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  background-color:white;
+
+  
+}
+.viewtext:hover {
+  border: 2px solid #cc0000;
+}

@@ -12,7 +12,9 @@ class MenuApp extends React.Component {
       rest_id: 2,
       menu_state: 0,
       filtered_menu_data: ["filtered"],
+      viewmore: true,
     };
+    this.click = this.click.bind(this)
   }
 
   componentWillMount() {
@@ -69,12 +71,15 @@ class MenuApp extends React.Component {
     this.filterDatabyMenuType()
   }
 
+  click() {
+    this.setState({ details: false, viewmore: false });
+  }
 
   render() {
-    
+    let viewId = this.state.viewmore ? "viewmore" : "viewmore1";
     return (
-      <div>
-        <div className={styles.appcontainer}>
+      <div >
+        <div className={styles.menucontainer}>
           <div className={styles.sectionHeader}>
           
                   <b>Menu</b>
@@ -89,7 +94,14 @@ class MenuApp extends React.Component {
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 0)} />
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 1)} />
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 2)} />
+          
+            <div className={styles[viewId]}>
+              <div className={styles.viewtext} onClick={()=>this.click()}>View full menu</div>
+            </div>
         </div>
+        {/* <div className={styles[viewId]}>
+            <div className={styles.viewtext} onClick={()=>this.click()}>View all details</div>
+        </div> */}
       </div>
     );
   }

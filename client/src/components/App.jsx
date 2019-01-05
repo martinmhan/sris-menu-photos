@@ -12,7 +12,7 @@ class App extends React.Component {
       super(props);
       this.state = {
         close: true,
-        rest_id: 2,
+        rest_id: 0,
         currentPhoto: 0
       };
       this.handleEscape = this.handleEscape.bind(this);
@@ -44,7 +44,7 @@ class App extends React.Component {
             handleEscape ={this.handleEscape}/>
         } else {
             return (
-                <div className={styles.appcontainer}>    
+                <div className = {styles.appcontainer}>    
                     <Photo 
                         handlePictureClick = {this.handlePictureClick}/>
                     <MenuApp />
