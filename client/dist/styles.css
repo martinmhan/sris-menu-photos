@@ -1,7 +1,7 @@
 .appcontainer {
   /* border: 2px solid black; */
-  width: 650px;
-  /* width: auto; */
+  /* width: 650px; */
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
@@ -14,8 +14,8 @@
 
 .menucontainer {
   /* border: 2px solid black; */
-  width: 650px;
-  /* width: auto; */
+  /* width: 650px; */
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
