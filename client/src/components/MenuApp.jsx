@@ -105,7 +105,7 @@ class MenuApp extends React.Component {
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 2)} />
           
             <div className={styles[viewId]}>
-              <div className={styles.viewtext} onClick={()=>this.click()}>View full menu</div>
+              <div className={styles.viewtext} onClick={()=>this.click()}>View Full Menu</div>
             </div>
         </div>
         {/* <div className={styles[viewId]}>

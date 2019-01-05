@@ -1,7 +1,7 @@
 .appcontainer {
   /* border: 2px solid black; */
-  /* width: 650px; */
-  width: auto;
+  width: 650px;
+  /* width: auto; */
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
@@ -14,8 +14,8 @@
 
 .menucontainer {
   /* border: 2px solid black; */
-  /* width: 650px; */
-  width: auto;
+  width: 650px;
+  /* width: auto; */
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
@@ -230,18 +230,18 @@
 }
 
 .viewmore {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 200px;
   /* offset */
   width: 100%;
   text-align: center;
   background-image: linear-gradient(transparent, white, white );
   /* background-color:rgba(0, 255, 255, 1); */
   border: white solid 1px;
-  margin-top: -45%;
+  margin-top: -34%;
   opacity: 1;
   /* z-index: 2505554165; */
   position: relative
@@ -250,6 +250,9 @@
   display: none;
 }
 .viewtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid gainsboro ;
   border-radius: 2px;
   /* background-color: white; */
