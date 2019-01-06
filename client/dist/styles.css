@@ -59,7 +59,9 @@
   margin-top: 16px;
   font-size: 14px;
   color: #2d333f;
-  border-radius: 5px
+  border-radius: 5px;
+  cursor: pointer;
+  outline:none;
 }
 
 .menusectiontitle{
@@ -280,7 +282,6 @@
   margin-right: auto;
   margin-top: 20%;
   background-color:white;
-
   
 }
 .viewtext:hover {
