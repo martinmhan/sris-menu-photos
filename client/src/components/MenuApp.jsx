@@ -88,7 +88,7 @@ class MenuApp extends React.Component {
     let viewId = this.state.viewmore ? "viewmore" : "viewmore1";
     return (
       <div >
-        <div className={styles.menucontainer}>
+        <div id="restaurantmenu" className={styles.menucontainer}>
           <div className={styles.sectionHeader}>
           
                   <b>Menu</b>

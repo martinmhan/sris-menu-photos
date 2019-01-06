@@ -45,7 +45,6 @@ handleRightClick(e) {
     return (
 
       <div> 
-        
         <div className ={styles.view}>
         <div className = {styles.fullscreenimage}>
           <div className  = {styles.photogallery}>

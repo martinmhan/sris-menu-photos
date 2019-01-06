@@ -22,7 +22,7 @@ class App extends React.Component {
 render() {
     return (
         <div> 
-             <div className = {styles.layout}> 
+             <div id = "restaurantphotos" className = {styles.layout}> 
                 <div className = {styles.col1}>
                     <img className = {styles.row} src={path.join(this.state.path, `restID${this.state.rest_id}_photo0.jpg`)} height="50%" onClick={e => this.props.handlePictureClick(e, 0)}></img> 
                     <img className = {styles.row} src={path.join(this.state.path, `restID${this.state.rest_id}_photo1.jpg` )} height="50%" onClick={e => this.props.handlePictureClick(e, 1)}></img>
