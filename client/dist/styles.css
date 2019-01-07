@@ -221,7 +221,7 @@
   height: 35%
 }
 .chevronleft {
-  color: #91949a;
+  background-color: transparent;
   font-size: 1.2rem;
   position: absolute;
   top: 50%;
@@ -231,13 +231,15 @@
   font-weight: 700;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  left:0
+  /* line-height: 1; */
+  left:0;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .chevronright {
-  color: #91949a;
+  background-color: transparent;
   font-size: 1.2rem;
   position: absolute;
   top: 50%;
@@ -247,16 +249,23 @@
   font-weight: 700;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  /* line-height: 1; */
   -webkit-font-smoothing: antialiased;
-  right:0
+  right:0;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .escape {
+  background-color: transparent;
   position: absolute;
   padding: 0px;
   right: 0;
-  top: 0
+  top: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .viewmore {
