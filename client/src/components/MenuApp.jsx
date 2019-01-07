@@ -13,6 +13,9 @@ class MenuApp extends React.Component {
       menu_state: 0,
       filtered_menu_data: ["filtered"],
       viewmore: true,
+      breakfast: true,
+      lunch: false,
+      dinner: false
     };
     this.click = this.click.bind(this)
   }
@@ -69,14 +72,23 @@ class MenuApp extends React.Component {
   }
   breakfastHandler(e) {
     this.setState({menu_state: 0})
+    this.setState({breakfast: true});
+    this.setState({lunch: false})
+    this.setState({dinner: false})
     this.filterDatabyMenuType()
   }
   lunchHandler(e) {
     this.setState({menu_state: 1})
+    this.setState({breakfast: false});
+    this.setState({lunch: true})
+    this.setState({dinner: false})
     this.filterDatabyMenuType()
   }
   dinnerHandler(e) {
     this.setState({menu_state: 2})
+    this.setState({breakfast: false});
+    this.setState({lunch: false})
+    this.setState({dinner: true})
     this.filterDatabyMenuType()
   }
 
@@ -86,6 +98,10 @@ class MenuApp extends React.Component {
 
   render() {
     let viewId = this.state.viewmore ? "viewmore" : "viewmore1";
+    let breakfastStyle = this.state.breakfast ? "breakfastbutton" : "breakfastbutton1";
+    let lunchStyle = this.state.lunch ? "lunchbutton" : "lunchbutton1";
+    let dinnerStyle = this.state.dinner ? "dinnerbutton" : "dinnerbutton1";
+
     return (
       <div >
         <div id="restaurantmenu" className={styles.menucontainer}>
@@ -94,9 +110,9 @@ class MenuApp extends React.Component {
                   <b>Menu</b>
           </div>
           <div className = {styles.menusectiontitle}> 
-          <button className={styles.buttonmenulink} onClick={e => this.breakfastHandler(e)}>Breakfast</button>
-          <button className={styles.buttonmenulink} onClick={e => this.lunchHandler(e)}>Lunch</button>
-          <button className={styles.buttonmenulink} onClick={e => this.dinnerHandler(e)}>Dinner</button>
+          <button className={styles[breakfastStyle]} onClick={e => this.breakfastHandler(e)}>Breakfast</button>
+          <button className={styles[lunchStyle]} onClick={e => this.lunchHandler(e)}>Lunch</button>
+          <button className={styles[dinnerStyle]} onClick={e => this.dinnerHandler(e)}>Dinner</button>
           </div>
 
           
