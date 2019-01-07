@@ -107,7 +107,7 @@ class MenuApp extends React.Component {
         <div id="restaurantmenu" className={styles.menucontainer}>
           <div className={styles.sectionHeader}>
           
-                  <b>Menu</b>
+                  Menu
           </div>
           <div className = {styles.menusectiontitle}> 
           <button className={styles[breakfastStyle]} onClick={e => this.breakfastHandler(e)}>Breakfast</button>

@@ -23,7 +23,7 @@ render() {
     return (
         <div> 
             <div className={styles.sectionHeader}>
-                <b>20 Photos</b>
+                20 Photos
             </div>
              <div id = "restaurantphotos" className = {styles.layout}> 
                 <div className = {styles.col1}>
