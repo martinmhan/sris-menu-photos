@@ -12,7 +12,7 @@ class App extends React.Component {
       super(props);
       this.state = {
         close: true,
-        rest_id: 0,
+        rest_id: 101,
         currentPhoto: 0
       };
       this.handleEscape = this.handleEscape.bind(this);

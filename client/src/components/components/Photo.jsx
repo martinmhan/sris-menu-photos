@@ -8,7 +8,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            rest_id: 0,
+            rest_id: 101,
             currentPhoto: 0,
             path: "https://s3-us-west-1.amazonaws.com/table-it/images/",
             view: "main"
