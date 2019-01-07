@@ -9,7 +9,7 @@ class MenuApp extends React.Component {
     this.state = {
       menu_data: ['hello'],
       menu_types: {},
-      rest_id: 2,
+      rest_id: 3,
       menu_state: 0,
       filtered_menu_data: ["filtered"],
       viewmore: true,

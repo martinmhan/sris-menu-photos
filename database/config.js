@@ -1,3 +1,4 @@
+//AWS database
 module.exports = {
   host: 'localhost',
   user: 'root',
@@ -5,6 +6,7 @@ module.exports = {
   database: 'menu_db',
 };
 
+//local database
 // module.exports = {
 //   host: 'localhost',
 //   user: 'root',

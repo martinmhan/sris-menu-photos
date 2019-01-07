@@ -6,11 +6,13 @@ const MenuItem = (props) => {
         <div className={styles.menuitem}>
             {props.item.menu_item_name}
             <br></br>
-            Made with Cheese and Eggs
+            {props.item.menu_item_description}
+
             <div className={styles.menuprice}>
                 {props.item.menu_item_price}
             </div>
         </div>
+        
         
     )
 }

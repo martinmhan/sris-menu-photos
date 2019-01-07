@@ -34,6 +34,7 @@ class App extends React.Component {
             currentPhoto: image_num,
             close: false,
         })
+        
     }
     
     renderView() {
