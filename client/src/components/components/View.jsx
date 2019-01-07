@@ -48,7 +48,7 @@ handleRightClick(e) {
           <div className  = {styles.photogallery}>
           <button className={styles.escape}onClick={e => this.props.handleEscape(e)}><img src="https://s3-us-west-1.amazonaws.com/table-it/close_x.png"></img> </button>
           <button className={styles.chevronleft} onClick={e => this.handleLeftClick(e)}><img src="https://s3-us-west-1.amazonaws.com/table-it/left.png"></img> </button>
-            <img src={path.join(this.state.path, `restID${this.props.restID}_photo${this.state.current_photo}.jpg`)} ></img> 
+            <img className = {styles.imagestyle}src={path.join(this.state.path, `restID${this.props.restID}_photo${this.state.current_photo}.jpg`)} ></img> 
           <button className={styles.chevronright} onClick={e => this.handleRightClick(e)}><img src="https://s3-us-west-1.amazonaws.com/table-it/right.png"></img> </button>
           </div>
         </div>
