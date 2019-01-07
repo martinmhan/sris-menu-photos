@@ -251,6 +251,8 @@
 }
 .view {
   background-color: black;
+  display: flex;
+  justify-content: center;
   top: 0;
   right: 0;
   left: 0;
@@ -258,8 +260,8 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  /* opacity: 0.7; */
-  z-index: 20;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.7);
 }
 
 .view1 {
@@ -278,20 +280,22 @@
   display: flex;
   position: fixed;
   justify-content: center;
-  width: 100%;
+  width: auto;
   height: 100%;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: transparent;
-  opacity: 0.7;
+  /* background-color: transparent; */
+  background-color: rgba(0,0,0,0.75);
+
+  /* opacity: 0.7; */
   z-index:21;
   
 }
 
 .imagestyle {
-  position: fixed;
+  /* position: fixed; */
   z-index:22
 
 }
@@ -300,6 +304,7 @@
   display: flex;
   justify-content: center;
   width: 80%;
+  /* width: auto; */
   overflow: hidden;
   position: relative;
   margin: 100px;
@@ -308,7 +313,7 @@
 .chevronleft {
   background-color: transparent;
   font-size: 1.2rem;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   font-family: icons;
   speak: none;
@@ -317,16 +322,17 @@
   font-variant: normal;
   text-transform: none;
   /* line-height: 1; */
-  left:0;
+  left: 10%;
   border: none;
   cursor: pointer;
   outline: none;
+  margin: 5px
 }
 
 .chevronright {
   background-color: transparent;
   font-size: 1.2rem;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   font-family: icons;
   speak: none;
@@ -336,10 +342,11 @@
   text-transform: none;
   /* line-height: 1; */
   -webkit-font-smoothing: antialiased;
-  right:0;
+  right: 10%;
   border: none;
   cursor: pointer;
   outline: none;
+  margin: 5px
 }
 
 .escape {
@@ -377,7 +384,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid gainsboro ;
+  /* border: 1px solid gainsboro ; */
   border-radius: 2px;
   /* background-color: white; */
   position: relative;
