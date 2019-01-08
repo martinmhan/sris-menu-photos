@@ -106,7 +106,7 @@ class MenuApp extends React.Component {
       <div >
         <div id="restaurantmenu" className={styles.menucontainer}>
           <div className={styles.sectionHeader}>
-          
+          <br></br>
                   Menu
           </div>
           <div className = {styles.menusectiontitle}> 
