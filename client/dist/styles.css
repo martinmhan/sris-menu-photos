@@ -367,16 +367,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
   /* offset */
+  height: 300px;
   width: 100%;
   text-align: center;
   background-image: linear-gradient(transparent, white, white );
   /* background-color:rgba(0, 255, 255, 1); */
   /* border: white solid 1px; */
-  margin-top: -34%;
+  margin-top: -45%;
   opacity: 1;
-  /* z-index: 2505554165; */
   position: relative
 }
 .viewmore1 {
@@ -386,9 +385,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid gainsboro ; */
+  border: 1px solid gainsboro ;
   border-radius: 2px;
-  /* background-color: white; */
+  background-color: white;
   position: relative;
   font-size: 15px;
   font-weight: 500;
@@ -398,7 +397,7 @@
   width: 30%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30%;
+  margin-top: 10%;
   background-color:white;
   
 }
