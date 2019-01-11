@@ -31,18 +31,18 @@ class MenuApp extends React.Component {
 
   findUniqueMenuTypes() {
     axios
-      .get(`http://127.0.0.1:9000/api/menus/${this.state.rest_id}`)
+      // .get(`http://127.0.0.1:9000/api/menus/${this.state.rest_id}`)
       // .get(`/api/menus/${this.state.rest_id}`)
-      // .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)                    
+      .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)                    
       .then(({ data }) => this.retrieveUniqueMenuTypes(data))
       .then((data) => this.setState({menu_types: data}));
   }
 
   filterDatabyMenuType() {
     axios
-    .get(`http://127.0.0.1:9000/api/menus/${this.state.rest_id}`)  
+    // .get(`http://127.0.0.1:9000/api/menus/${this.state.rest_id}`)  
     // .get(`/api/menus/${this.state.rest_id}`)
-    // .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)        
+    .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)        
         
     .then(({ data }) => data.filter(obj => obj.menu_type_num === this.state.menu_state))
     .then((data)=> this.setState({filtered_menu_data: data}))
@@ -51,9 +51,9 @@ class MenuApp extends React.Component {
 
   getMenus(rest_id) {
     axios
-      .get(`http://127.0.0.1:9003/api/menus/${rest_id}`)
+      // .get(`http://127.0.0.1:9003/api/menus/${rest_id}`)
       // .get(`/api/menus/${rest_id}`)
-      // .get(`http://3.86.82.182:9000/api/menus/${rest_id}`)          
+      .get(`http://3.86.82.182:9000/api/menus/${rest_id}`)          
       .then(({ data }) => this.setState({menu_data: data}));
   }; 
 
