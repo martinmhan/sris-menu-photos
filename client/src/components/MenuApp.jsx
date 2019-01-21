@@ -27,12 +27,8 @@ class MenuApp extends React.Component {
     
   }
 
-  // http://54.219.151.33:9003/
-
   findUniqueMenuTypes() {
     axios
-      // .get(`http://127.0.0.1:9000/api/menus/${this.state.rest_id}`)
-      // .get(`/api/menus/${this.state.rest_id}`)
       .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)                    
       .then(({ data }) => this.retrieveUniqueMenuTypes(data))
       .then((data) => this.setState({menu_types: data}));
@@ -40,8 +36,6 @@ class MenuApp extends React.Component {
 
   filterDatabyMenuType() {
     axios
-    // .get(`http://127.0.0.1:9000/api/menus/${this.state.rest_id}`)  
-    // .get(`/api/menus/${this.state.rest_id}`)
     .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)        
         
     .then(({ data }) => data.filter(obj => obj.menu_type_num === this.state.menu_state))
@@ -51,13 +45,9 @@ class MenuApp extends React.Component {
 
   getMenus(rest_id) {
     axios
-      // .get(`http://127.0.0.1:9003/api/menus/${rest_id}`)
-      // .get(`/api/menus/${rest_id}`)
       .get(`http://3.86.82.182:9000/api/menus/${rest_id}`)          
       .then(({ data }) => this.setState({menu_data: data}));
   }; 
-
-
 
   retrieveUniqueMenuTypes(menu_data) {
     let unique_menus_set = new Set();
@@ -70,6 +60,7 @@ class MenuApp extends React.Component {
     }
    return [unique_menus_dict]
   }
+
   breakfastHandler(e) {
     this.setState({menu_state: 0})
     this.setState({breakfast: true});
@@ -77,6 +68,7 @@ class MenuApp extends React.Component {
     this.setState({dinner: false})
     this.filterDatabyMenuType()
   }
+
   lunchHandler(e) {
     this.setState({menu_state: 1})
     this.setState({breakfast: false});
@@ -84,6 +76,7 @@ class MenuApp extends React.Component {
     this.setState({dinner: false})
     this.filterDatabyMenuType()
   }
+
   dinnerHandler(e) {
     this.setState({menu_state: 2})
     this.setState({breakfast: false});
@@ -107,7 +100,7 @@ class MenuApp extends React.Component {
         <div id="restaurantmenu" className={styles.menucontainer}>
           <div className={styles.sectionHeader}>
           <br></br>
-                  Menu
+            Menu
           </div>
           <div className = {styles.menusectiontitle}> 
           <button className={styles[breakfastStyle]} onClick={e => this.breakfastHandler(e)}>Breakfast</button>
@@ -115,18 +108,14 @@ class MenuApp extends React.Component {
           <button className={styles[dinnerStyle]} onClick={e => this.dinnerHandler(e)}>Dinner</button>
           </div>
 
-          
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 0)} />
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 1)} />
           <MenuSection data = {this.state.filtered_menu_data.filter(obj => obj.menu_section_num === 2)} />
-          
-            <div className={styles[viewId]}>
-              <div className={styles.viewtext} onClick={()=>this.click()}>View Full Menu</div>
-            </div>
+
+          <div className={styles[viewId]}>
+            <div className={styles.viewtext} onClick={()=>this.click()}>View Full Menu</div>
+          </div>
         </div>
-        {/* <div className={styles[viewId]}>
-            <div className={styles.viewtext} onClick={()=>this.click()}>View all details</div>
-        </div> */}
       </div>
     );
   }
