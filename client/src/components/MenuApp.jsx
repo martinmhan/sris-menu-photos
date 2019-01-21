@@ -29,14 +29,14 @@ class MenuApp extends React.Component {
 
   findUniqueMenuTypes() {
     axios
-      .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)                    
+      .get(`http://3.83.40.199:9000/api/menus/${this.state.rest_id}`)                    
       .then(({ data }) => this.retrieveUniqueMenuTypes(data))
       .then((data) => this.setState({menu_types: data}));
   }
 
   filterDatabyMenuType() {
     axios
-    .get(`http://3.86.82.182:9000/api/menus/${this.state.rest_id}`)        
+    .get(`http://3.83.40.199:9000/api/menus/${this.state.rest_id}`)        
         
     .then(({ data }) => data.filter(obj => obj.menu_type_num === this.state.menu_state))
     .then((data)=> this.setState({filtered_menu_data: data}))
@@ -45,7 +45,7 @@ class MenuApp extends React.Component {
 
   getMenus(rest_id) {
     axios
-      .get(`http://3.86.82.182:9000/api/menus/${rest_id}`)          
+      .get(`http://3.83.40.199:9000/api/menus/${rest_id}`)          
       .then(({ data }) => this.setState({menu_data: data}));
   }; 
 
