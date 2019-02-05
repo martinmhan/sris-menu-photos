@@ -1,6 +1,6 @@
 //AWS database
 module.exports = {
-  host: 'localhost',
+  host: '3.84.195.96',
   user: 'root',
   password: 'password',
   database: 'menu_db',
